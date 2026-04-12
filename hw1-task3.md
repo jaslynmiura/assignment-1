@@ -41,10 +41,11 @@ n = 52, p = 4
 
 ### Exercise 2 (ISLP exercise 5)
 
-What are the advantages and disadvantages of a very flexible (versus a a less flexible) approach for regression? Under what circumstances might a more flexible approach be preferred to a less flexible approach? When might a less flexible approach be preferred?
+What are the advantages and disadvantages of a very flexible (versus a less flexible) approach for regression? Under what circumstances might a more flexible approach be preferred to a less flexible approach? When might a less flexible approach be preferred?
 
 > **Your Answer:**
-More flexible models can fit many different possible functional forms for f. But, the more flexible the model, it more it calls for the estimation of greater number of parameters. Which makes the models more complex and risk overfitting the data, where the model follows the noise in the data too closely.
+
+The advantages of a very flexible approach for regression is the ability to fit many different possible functional forms for *f*, such as non-linear relationships. A disadvantage of a flexible model is the fact that it calls for the estimation of a greater number of parameters. With more parameters a model can become more complex and overfit the data. A flexible approach should be applied to models with many observations, where the relationship may be complex and may contain a non-linear relationship. A less flexible approach can be applied in circumstances where there is a smaller amount of observations. We also want a less flexible approach when our goal is inference, where our predictors matter and we're able to interpret our coefficients.
 
 ---
 
@@ -53,3 +54,5 @@ More flexible models can fit many different possible functional forms for f. But
 Describe the differences between a **parametric** and a **non-parametric** statistical learning approach. What are the **advantages** of a parametric approach to regression or classification (as opposed to a non-parametric approach)? What are its **disadvantages**?
 
 > **Your Answer:**
+
+A parametric approach makes an assumption about the functional form or shape of *f*, where training data is used to train or fit the model to obtain parameters that will define the estimate *f-hat*. A non-parametric approach does not make assumptions about the funtional form of *f*. Instead it tries to find estimates that fit the training data, without being too rough. The advantages of parametric approach is that it is easier to draw inferences from, it can be used with small training sets, and it is computationally easier to estimate the parameters. The disadvantages of a parameteric approach, is the fact that the form of *f* that we assume/define, may be far from the true form of *f*, which in turn can influence our predictions and lead us to make inaccurate inferences.
